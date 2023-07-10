@@ -7,5 +7,7 @@
         width: 450px;
         height: 650px;
     }
-    
+    .unclikable{
+        pointer-events: none;
+    }
 }

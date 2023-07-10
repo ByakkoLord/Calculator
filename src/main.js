@@ -17,10 +17,21 @@ var btn_equal = document.querySelector('#btn_equal')
 var btn_0 = document.querySelector('#btn_0')
 var btn_dot = document.querySelector('#btn_dot')
 
+var display = document.querySelector('#display')
+
 function addNumber(event){
-    var number = event.target
+    var number = event.target.dataset.value
+    display.textContent += number
+    armz += number
 }
 
-btn_C.addEventListener('click', function addNumber (){
-
-})
+btn_1.addEventListener('click', addNumber)
+btn_2.addEventListener('click', addNumber)
+btn_3.addEventListener('click', addNumber)
+btn_4.addEventListener('click', addNumber)
+btn_5.addEventListener('click', addNumber)
+btn_6.addEventListener('click', addNumber)
+btn_7.addEventListener('click', addNumber)
+btn_8.addEventListener('click', addNumber)
+btn_9.addEventListener('click', addNumber)
+btn_0.addEventListener('click', addNumber)
